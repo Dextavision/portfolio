@@ -26,18 +26,18 @@ body::-webkit-scrollbar-thumb {
 /* Style the Browser Scrollbar END */
 
 main {
-  margin-top: 6rem; /* Dont overlap with navbar */
+  margin-left: 6rem; /* Dont overlap with navbar */
   padding: 1rem;
 }
 
 /* Navbar START */
 .navbar-container {
-  width: 100vw;
-  height: 6rem;
+  height: 100vh;
+  width: 6rem;
   top: 0;
   position: fixed;
-  background-color: transparent;
-  border-bottom: solid 1px var(--main-color);
+  background-color: grey;
+  transition: width 200ms ease;
 }
 
 .navbar {
@@ -46,33 +46,43 @@ main {
   margin: 0;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.nav-item:not(:last-child) {
+.nav-item {
   width: 100%;
 }
 
 .nav-item:last-child {
-  margin-left: auto;
+  margin-top: auto;
 }
 
 .nav-link {
   display: flex;
   align-items: center;
   height: 6rem;
-  margin: 0 1.5rem;
   color: var(--main-color);
   text-decoration: none;
 }
 
 .nav-link svg {
-  min-width: 3rem;
-  margin-right: 1.5rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
 }
 
 .link-text {
   text-transform: uppercase;
+  margin-left: 1rem;
+  display: none;
+}
+
+.navbar-container:hover {
+  width: 16rem;
+}
+
+.navbar-container:hover .link-text {
+  display: block;
 }
 
 /* Mobile Navbar START */
