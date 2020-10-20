@@ -2,8 +2,10 @@
   font-family: 'Press Start 2P', cursive;
   font-size: 12px;
   color: black;
-  --main-color: rgb(37, 192, 166);
+  --main-color: rgb(13, 183, 226);
   --secondary-color: rgb(155, 71, 211);
+  --background-color: rgb(63, 61, 61);
+  --background-hover-color: rgb(39, 38, 38);
 }
 
 body {
@@ -36,7 +38,7 @@ main {
   width: 6rem;
   top: 0;
   position: fixed;
-  background-color: grey;
+  background-color: var(--background-color);
   transition: width 200ms ease;
 }
 
@@ -64,6 +66,14 @@ main {
   height: 6rem;
   color: var(--main-color);
   text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: 800ms;
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: var(--background-hover-color);
+  color: var(--main-color);
 }
 
 .nav-link svg {
@@ -72,9 +82,9 @@ main {
 }
 
 .link-text {
-  text-transform: uppercase;
   margin-left: 1rem;
   display: none;
+  text-transform: uppercase;
 }
 
 .navbar-container:hover {
@@ -83,6 +93,11 @@ main {
 
 .navbar-container:hover .link-text {
   display: block;
+}
+
+.nav-icon-color {
+  color: var(--main-color);
+  transition: 600ms;
 }
 
 /* Mobile Navbar START */
