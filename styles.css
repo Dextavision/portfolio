@@ -34,13 +34,14 @@ main {
 
 /* Navbar START */
 .navbar-container {
-  height: 100vh;
-  width: 6rem;
-  top: 0;
   position: fixed;
   background-color: var(--background-color);
   transition: width 200ms ease;
 }
+
+
+
+
 
 .navbar {
   list-style: none;
@@ -87,44 +88,52 @@ main {
   text-transform: uppercase;
 }
 
-.navbar-container:hover {
-  width: 16rem;
-}
-
-.navbar-container:hover .link-text {
-  display: block;
-}
-
 .nav-icon-color {
   color: var(--main-color);
   transition: 600ms;
 }
 
 /* Mobile Navbar START */
+@media only screen and (max-width: 47em) {
+  .navbar-container {
+    bottom: 0;
+    width: 100vw;
+    height: 6rem;
+  }
 
-.toggle-button {
-  position: absolute;
-  top: 2rem;
-  left: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
+  .navbar {
+    flex-direction: row;
+  }
 
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: var(--main-color);
-  border-radius: 10px ;
-}
+  .nav-link {
+    justify-content: center;
+  }
 
-@media (max-width: 48em) {
-  .nav-item {
-    width: 100%;
+  main {
+    margin: 0;
   }
 }
 /* Mobile Navbar END */
+
+/* Navbar for large Screens START */
+@media only screen and (min-width: 48em) {
+  .navbar-container {
+    top: 0;
+    height: 100vh;
+    width: 6rem;
+    transition: 500ms;
+  }
+
+  .navbar-container:hover {
+    width: 16rem;
+    transition: 500ms;
+  }
+
+  .navbar-container:hover .link-text {
+    display: inline;
+  }
+  
+}
+/* Navbar for large Screens END */
 
 /* Navbar END */
