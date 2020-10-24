@@ -8,6 +8,11 @@
   --background-hover-color: rgb(39, 38, 38);
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -29,7 +34,6 @@ body::-webkit-scrollbar-thumb {
 
 main {
   margin-left: 6rem; /* Dont overlap with navbar */
-  padding: 1rem;
 }
 
 /* Navbar START */
@@ -137,3 +141,14 @@ main {
 /* Navbar for large Screens END */
 
 /* Navbar END */
+
+/* Sections START */
+
+/* Section Me START */
+.section-me {
+  background-color: rgb(31, 29, 29);
+  height: 100vh;
+}
+/* Section Me END */
+
+/* Sections END */
