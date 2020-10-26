@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Encode Sans', sans-serif;
   font-size: 12px;
   color: whitesmoke;
   background-color: rgb(31, 29, 29);
@@ -43,10 +43,6 @@ main {
   background-color: var(--background-color);
   transition: width 200ms ease;
 }
-
-
-
-
 
 .navbar {
   list-style: none;
@@ -145,19 +141,19 @@ main {
 
 /* Sections START */
 
-/* Section Me START */
+/* Section Landing START */
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .section-me {
+  .section-landing {
     padding-left: 2em;
   }
 }
 
-.section-me {
+.section-landing {
   font-size: 2em;
   height: 100vh;
 }
 
-.container-me {
+.container-landing {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -167,9 +163,13 @@ main {
 
 .heading {
   text-align: center;
-  width: 100%;
+  font-size: 7rem;
 }
 
-/* Section Me END */
+.heading-subtext {
+  text-align: center;
+}
+
+/* Section Landing END */
 
 /* Sections END */
