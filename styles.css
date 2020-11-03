@@ -142,14 +142,8 @@ main {
 /* Sections START */
 
 /* Section Landing START */
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .section-landing {
-    padding-left: 2em;
-  }
-}
 
 .section-landing {
-  font-size: 2em;
   height: 100vh;
 }
 
@@ -158,17 +152,79 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .heading {
   text-align: center;
-  font-size: 7rem;
+  font-size: 3rem;
 }
 
 .heading-subtext {
   text-align: center;
+  font-size: 1rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .heading {
+    font-size: 7rem;
+  }
+
+  .heading-subtext {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .heading {
+    font-size: 5rem;
+  }
+
+  .heading-subtext {
+    font-size: 2rem;
+  }
+
+  .section-landing {
+    padding-left: 2em;
+  }
+}
 /* Section Landing END */
 
 /* Sections END */
+
+/* Buttons START */
+.btn-sections {
+  margin-top: 20px;
+  width: 80px;
+  height: 40px;
+  background: transparent;
+  cursor: pointer;
+  color: white;
+
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  text-transform: uppercase;
+}
+
+.btn-sections:hover {
+  border: 3px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(241, 241, 241, 0);
+  outline-offset: 15px;
+  color: var(--main-color);
+  text-shadow: 1px 1px 2px var(--main-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-sections {
+    width: 150px;
+    height: 50px;
+  }
+}
+/* Buttons END */
