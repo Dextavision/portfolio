@@ -158,6 +158,11 @@ main {
   align-items: center;
 }
 
+.landing-image {
+  width: 360px;
+  height: 200px;
+}
+
 .heading {
   text-align: center;
   font-size: 6rem;
@@ -185,6 +190,11 @@ main {
     width: 50%;
   }
 
+  .landing-image {
+    width: 460px;
+    height: 270px;
+  }
+
   .landing-text-section {
     width: 50%;
   }
@@ -196,10 +206,6 @@ main {
   .heading-subtext {
     font-size: 2rem;
   }
-
-  .section-landing {
-    padding-left: 2em;
-  }
 }
 
 /* Desktop */
@@ -209,8 +215,8 @@ main {
   }
 
   .landing-image {
-    width: 700px;
-    height: 400px;
+    width: 900px;
+    height: 600px;
   }
 
   .landing-image-section {
