@@ -13,6 +13,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -30,7 +31,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--main-color);
+  background: white;
 }
 /* Style the Browser Scrollbar END */
 
@@ -88,6 +89,7 @@ main {
   margin-left: 1rem;
   display: none;
   text-transform: uppercase;
+  font-weight: bold !important;
 }
 
 .nav-icon-color {
@@ -145,6 +147,7 @@ main {
 
 .section-landing {
   height: 100vh;
+  /* background: url(./assets/images/white-rainforest-TNGr7fETBrM-unsplash.jpg); */
 }
 
 .container-landing {
@@ -157,8 +160,7 @@ main {
 
 .heading {
   text-align: center;
-  font-size: 3rem;
-  margin: 0;
+  font-size: 6rem;
 }
 
 .landing-text-section {
@@ -171,19 +173,22 @@ main {
   align-self: center;
 }
 
-/* Handy */
-@media only screen and (min-width: 768px) {
-  .heading {
-    font-size: 7rem;
-  }
-
-  .heading-subtext {
-    font-size: 4rem;
-  }
-}
-
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .container-landing {
+    flex-direction: row;
+  }
+
+  .landing-image-section {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+  }
+
+  .landing-text-section {
+    width: 50%;
+  }
+
   .heading {
     font-size: 5rem;
   }
@@ -214,22 +219,101 @@ main {
     width: 50%;
   }
 
+  .heading {
+    font-size: 8rem;
+    font-weight: bold;
+  }
+
   .landing-text-section {
     width: 50%;
   }
 }
 /* Section Landing END */
 
+/* Section Myself START */
+.section-myself {
+  height: 100vh;
+}
+
+.container-myself {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.myself-image {
+  border-radius: 50%;
+}
+
+.myself-text {
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 72px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.myself-text-header {
+  font-size: 5em;
+  text-align: center;
+}
+
+.highlight-text-color {
+  color: var(--main-color);
+}
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+  .section-myself {
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
+
+  .container-myself {
+    flex-direction: row;
+  }
+
+  .myself-image-section {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .myself-text-section {
+    padding-right: 20em;
+    width: 60%;
+  }
+
+  .myself-image {
+    width: 400px;
+    height: 500px;
+  }
+
+  .myself-text {
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+  .myself-text-header {
+    font-size: 8em;
+  }
+}
+/* Section Myself END */
+
 /* Sections END */
 
 /* Buttons START */
 .btn-sections {
   margin-top: 20px;
-  width: 80px;
+  width: 100px;
   height: 40px;
   background: transparent;
   cursor: pointer;
   color: white;
+  font-weight: bold;
 
   border: 0 solid;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
