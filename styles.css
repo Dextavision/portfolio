@@ -44,6 +44,7 @@ main {
   position: fixed;
   background-color: var(--background-color);
   transition: width 200ms ease;
+  z-index: 1;
 }
 
 .navbar {
@@ -239,6 +240,8 @@ main {
 /* Section Myself START */
 .section-myself {
   height: 100vh;
+  background-color: rgb(255, 255, 255);
+  color: black;
 }
 
 .container-myself {
@@ -274,8 +277,6 @@ main {
 @media only screen and (min-width: 1200px) {
   .section-myself {
     clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
-    background-color: rgb(255, 255, 255);
-    color: black;
   }
 
   .container-myself {
