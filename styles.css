@@ -61,10 +61,6 @@ main {
   width: 100%;
 }
 
-.nav-item:last-child {
-  margin-top: auto;
-}
-
 .nav-link {
   display: flex;
   align-items: center;
@@ -390,7 +386,12 @@ main {
 
   .card-title {
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
+  }
+
+  .card-description {
+    text-align: center;
+    font-size: 1.5em;
   }
 }
 /* Section Project END */
