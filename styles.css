@@ -340,6 +340,8 @@ main {
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
   width: 80%;
   height: 40%;
   margin-bottom: 3em;
@@ -379,6 +381,28 @@ main {
   display: flex;
   justify-content: space-around;
   margin-bottom: 35px;
+}
+
+.offline {
+  text-align: center;
+  text-transform: uppercase;
+  color: red;
+  font-size: 2em;
+}
+
+.online {
+  text-align: center;
+  text-transform: uppercase;
+  color: green;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.below-wave {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 /* Wavy Divider */
@@ -487,3 +511,9 @@ main {
   }
 }
 /* Buttons END */
+
+/* Others START */
+.link-style {
+  text-decoration: none;
+}
+/* Others END */
