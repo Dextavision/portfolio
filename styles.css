@@ -357,6 +357,17 @@ main {
   box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
 }
 
+.card-title {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.card-description {
+  text-align: center;
+  font-size: 1em;
+  padding-top: 0.5em;
+}
+
 .card-title,
 .card-description {
   background: rgb(31, 29, 29);
@@ -380,22 +391,24 @@ main {
 .card-tech {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 35px;
 }
 
 .offline {
   text-align: center;
   text-transform: uppercase;
   color: red;
-  font-size: 2em;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0;
 }
 
 .online {
   text-align: center;
   text-transform: uppercase;
   color: green;
-  font-size: 2em;
   font-weight: bold;
+  font-size: 1em;
+  margin: 0;
 }
 
 .below-wave {
@@ -422,12 +435,44 @@ main {
   overflow: hidden;
 }
 
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .card-title {
+    font-size: 2em;
+    padding-top: 1em;
+  }
+
+  .card-description {
+    font-size: 1em;
+  }
+}
+
+/* Tablet Big */
+@media only screen and (min-width: 1024px) {
+  .card-title {
+    font-size: 3em;
+    padding-top: 1em;
+  }
+
+  .card-description {
+    font-size: 2em;
+  }
+
+  .tech-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .github-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 /* Desktop */
 @media only screen and (min-width: 1200px) {
   .project-header {
-    text-align: center;
     font-size: 8em;
-    margin: 0;
   }
 
   .container-projects {
@@ -454,13 +499,11 @@ main {
   }
 
   .card-title {
-    text-align: center;
     font-size: 2.5em;
     padding-top: 1em;
   }
 
   .card-description {
-    text-align: center;
     font-size: 1.5em;
     padding-top: 1em;
   }
@@ -469,9 +512,26 @@ main {
     width: 120px;
     height: 120px;
   }
+
+  .tech-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .offline {
+    font-size: 2em;
+  }
+
+  .online {
+    font-size: 2em;
+  }
 }
 /* Section Project END */
 
+/* Section Footer Start */
+.section-footer {
+}
+/* Section Footer End */
 /* Sections END */
 
 /* Buttons START */
