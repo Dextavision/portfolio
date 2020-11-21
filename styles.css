@@ -144,7 +144,6 @@ main {
 
 .section-landing {
   height: 100vh;
-  /* background: url(./assets/images/white-rainforest-TNGr7fETBrM-unsplash.jpg); */
 }
 
 .container-landing {
@@ -237,7 +236,7 @@ main {
 .section-myself {
   height: 100vh;
   background-color: rgb(255, 255, 255);
-  color: black;
+  color: rgb(31, 29, 29);
 }
 
 .container-myself {
@@ -323,17 +322,12 @@ main {
 /* Section Myself END */
 
 /* Section Project START */
-.section-projects {
-  height: 100vh;
-}
-
 .project-header {
   text-align: center;
   font-size: 5em;
 }
 
 .container-projects {
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -376,6 +370,7 @@ main {
 .card-github {
   display: flex;
   justify-content: center;
+  margin: 4em 0 4em 0;
 }
 
 .github-icon {
@@ -399,7 +394,7 @@ main {
   color: red;
   font-weight: bold;
   font-size: 1em;
-  margin: 0;
+  margin-bottom: 1em;
 }
 
 .online {
@@ -408,7 +403,7 @@ main {
   color: green;
   font-weight: bold;
   font-size: 1em;
-  margin: 0;
+  margin-bottom: 1em;
 }
 
 .below-wave {
@@ -476,7 +471,6 @@ main {
   }
 
   .container-projects {
-    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -528,10 +522,26 @@ main {
 }
 /* Section Project END */
 
-/* Section Footer Start */
-.section-footer {
+/* Section Contact START */
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+  .section-contact {
+    background-color: rgb(255, 255, 255);
+    color: rgb(31, 29, 29);
+  }
+
+  .contact-header {
+    text-align: center;
+    font-size: 8em;
+  }
+
+  .contact-text {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 20% 0 20%;
+  }
 }
-/* Section Footer End */
+/* Section Contact END */
 /* Sections END */
 
 /* Buttons START */
