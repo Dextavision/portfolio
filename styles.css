@@ -97,9 +97,10 @@ main {
 /* Mobile Navbar START */
 @media only screen and (max-width: 600px) {
   .navbar-container {
-    bottom: 0;
+    top: 0;
     width: 100vw;
     height: 6rem;
+    background-color: transparent;
   }
 
   .navbar {
@@ -141,11 +142,6 @@ main {
 /* Sections START */
 
 /* Section Landing START */
-
-.section-landing {
-  height: 100vh;
-}
-
 .container-landing {
   height: 100%;
   display: flex;
@@ -157,6 +153,7 @@ main {
 .landing-image {
   width: 360px;
   height: 200px;
+  padding-top: 8em;
 }
 
 .heading {
@@ -189,6 +186,7 @@ main {
   .landing-image {
     width: 460px;
     height: 270px;
+    padding-top: 0;
   }
 
   .landing-text-section {
@@ -213,6 +211,7 @@ main {
   .landing-image {
     width: 900px;
     height: 600px;
+    padding-top: 0;
   }
 
   .landing-image-section {
@@ -523,20 +522,34 @@ main {
 /* Section Project END */
 
 /* Section Contact START */
+.section-contact {
+  background-color: rgb(255, 255, 255);
+  color: rgb(31, 29, 29);
+}
+
+.contact-header {
+  text-align: center;
+  font-size: 5em;
+}
+
+.contact-text {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.contact-platform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Desktop */
 @media only screen and (min-width: 1200px) {
-  .section-contact {
-    background-color: rgb(255, 255, 255);
-    color: rgb(31, 29, 29);
-  }
-
   .contact-header {
-    text-align: center;
     font-size: 8em;
   }
 
   .contact-text {
-    text-align: center;
     font-size: 2em;
     margin: 0 20% 0 20%;
   }
@@ -546,7 +559,7 @@ main {
 
 /* Buttons START */
 .btn-sections {
-  margin-top: 20px;
+  margin: 20px 0 20px 0;
   width: 100px;
   height: 40px;
   background: transparent;
