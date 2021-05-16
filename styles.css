@@ -230,7 +230,7 @@ main {
 
   .landing-image {
     width: 900px;
-    height: 600px;
+    height: 500px;
     padding-top: 0;
   }
 
@@ -340,6 +340,13 @@ main {
 }
 /* Section Myself END */
 
+/* Section Skills START */
+.skills-header {
+  text-align: center;
+  font-size: 5em;
+}
+/* Section Skills END */
+
 /* Section Project START */
 .project-header {
   text-align: center;
@@ -358,6 +365,7 @@ main {
   width: 80%;
   height: 40%;
   margin-bottom: 3em;
+  border-radius: 10px;
 
   background: white;
 
