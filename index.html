@@ -153,6 +153,15 @@
         </div>
       </section>
 
+      <!-- <section id="skills" class="section-skills">
+        <h1 class="skills-header">
+          <span class="highlight-text-color">My</span> Skills
+        </h1>
+        <div class="skills-body">
+          <p class="skills-typed"></p>
+        </div>
+      </section> -->
+
       <section id="projects" class="section-projects">
         <h1 class="project-header">
           <span class="highlight-text-color">Pro</span>jects
@@ -378,7 +387,13 @@
 
     <footer class="footer">
       <div class="footer-logo"></div>
-      <div class="footer-name">&copy;2020, Dany Tulumidis</div>
+      <div class="footer-name">&copy;
+        <span id="copyright">
+          <script>
+            document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+          </script>
+        </span>
+        , Dany Tulumidis</div>
       <div class="footer-slogan">
         Develop <span class="highlight-text-color">yourself</span>
       </div>
