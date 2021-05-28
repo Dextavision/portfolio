@@ -345,6 +345,86 @@ main {
   text-align: center;
   font-size: 5em;
 }
+
+.skills-subtext {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.skills-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1em;
+}
+
+.skills-card {
+  border-radius: 10px;
+  background-color: rgb(36, 34, 34);
+  box-shadow: 0 4px 10px 0 var(--main-color);
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 14em;
+  padding: 2em;
+  margin: 1em;
+}
+
+.skill-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: flex-start;
+  background: var(--main-color);
+  color: white;
+  border-radius: 2em;
+  height: 3em;
+  width: 10em;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .skills-subtext {
+    font-size: 2em;
+  }
+
+  .skills-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5em;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+  .skills-header {
+    font-size: 8em;
+  }
+
+  .skills-subtext {
+    font-size: 2em;
+  }
+  
+  .skills-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5em;
+  }
+  
+  .skills-card {
+    font-size: 1.5em;
+    height: 14em;
+    padding: 2em;
+    margin: 1em;
+  }
+  
+  .skill-badge {
+    height: 3em;
+    width: 10em;
+  }
+}
 /* Section Skills END */
 
 /* Section Project START */
@@ -568,6 +648,10 @@ main {
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
+  .contact-text {
+    font-size: 2em;
+  }
+
   .contact-platform {
     flex-direction: row;
     justify-content: center;
